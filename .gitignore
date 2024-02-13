@@ -3,3 +3,6 @@ postgres-data-db-volume/
 
 # EXCLUDE VIRTUAL ENV DIRECTORY
 .env/
+
+# EXCLUDE DBT LOGS DIRECTORY
+logs/
