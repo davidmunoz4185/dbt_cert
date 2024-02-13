@@ -1,0 +1,20 @@
+version: 2
+
+seeds:
+  - name: raw_customers
+    config:
+      database: dbt
+      schema: raw
+      alias: customers
+
+  - name: raw_orders
+    config:
+      database: dbt
+      schema: raw
+      alias: orders
+
+  - name: raw_payments
+    config:
+      database: dbt
+      schema: stripe
+      alias: payment
