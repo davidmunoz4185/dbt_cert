@@ -132,10 +132,18 @@ Now you can start with the certication
 
 ## PREPARE PROJECT
 
+You can see changes [here](https://github.com/davidmunoz4185/dbt_cert/pull/2/files).
+
 Before starting with coding, lets prepare our dbt project to follow the different courses:
 
 - Remove _models/example_ folder
 - Delete any example ref in _dbt_project.yml_
 - Add seed files
 
+### ADD RAW DATA
 
+Load seed files in postgres
+
+```BASH
+dbt seed
+```
