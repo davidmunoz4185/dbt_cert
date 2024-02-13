@@ -13,6 +13,8 @@ Regardless, technical knowledge, you must install:
 
 ## FIRST STEPS
 
+You can see changes [here](https://github.com/davidmunoz4185/dbt_cert/pull/1/files).
+
 ### DATABASE SETUP
 
 Start a Postgres Database using docker:
@@ -127,3 +129,13 @@ All checks passed!
 ```
 
 Now you can start with the certication
+
+## PREPARE PROJECT
+
+Before starting with coding, lets prepare our dbt project to follow the different courses:
+
+- Remove _models/example_ folder
+- Delete any example ref in _dbt_project.yml_
+- Add seed files
+
+
