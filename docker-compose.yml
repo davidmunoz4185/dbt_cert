@@ -1,0 +1,18 @@
+version: '3'
+services:
+  postgres-dbt:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dbt
+    volumes:
+      - ./postgres-data-db-volume:/var/lib/postgresql/data
+    ports:  
+      - "6432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "data_user"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: always
